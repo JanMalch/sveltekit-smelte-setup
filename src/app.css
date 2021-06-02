@@ -1,0 +1,7 @@
+/* your global styles */
+
+html,
+body,
+#svelte {
+    height: 100%;
+}
