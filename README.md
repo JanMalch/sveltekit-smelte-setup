@@ -1,38 +1,7 @@
-# create-svelte
+# sveltekit-smelte-setup
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+1. Setup SvelteKit: [kit.svelte.dev/docs](https://kit.svelte.dev/docs) ([`c2916672`](https://github.com/JanMalch/sveltekit-smelte-setup/commit/c29166722e8ec74625336dbc11eab2820bdc8c5e))
+1. Add Tailwind CSS: [github.com/svelte-add/tailwindcss](https://github.com/svelte-add/tailwindcss) ([`513a04b9`](https://github.com/JanMalch/sveltekit-smelte-setup/commit/513a04b9c615e41b0027d7d0f98f8d3397ff80ce))
+1. Add [Smelte](https://github.com/matyunya/smelte)  ([`5ce55eb4`](https://github.com/JanMalch/sveltekit-smelte-setup/commit/5ce55eb4a603a78b30796ab7862e8abe080c0424))
+    1. [change `tailwind.config.cjs`](https://github.com/matyunya/smelte/issues/230#issuecomment-812766997)
+    1. `import 'smelte/src/tailwind.css'` in root [`__layout.svelte`](https://github.com/JanMalch/sveltekit-smelte-setup/blob/main/src/routes/__layout.svelte#L2). 
